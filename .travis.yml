@@ -1,6 +1,9 @@
 os: windows
 language: shell
 install:
-# need to install this: https://github.com/fdopen/opam-repository-mingw/releases/download/0.0.0.2/OCaml32.exe
+ - wget https://github.com/fdopen/opam-repository-mingw/releases/download/0.0.0.2/opam32.tar.xz
+ - tar -xf opam32.tar.xz
+ - opam init default "https://github.com/fdopen/opam-repository-mingw.git#opam2" -c "ocaml-variants.4.07.1+mingw32c" --disable-sandboxing
+ - eval $(opam config env)
 script: 
   - make UISTYLE=text OSTYPE=cygwin
