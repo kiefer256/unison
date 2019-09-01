@@ -17,5 +17,5 @@ the building procedures for the respective options.
 * Download graphical installer from: https://fdopen.github.io/opam-repository-mingw/installation/ 32Bit only. (https://github.com/fdopen/opam-repository-mingw/releases/download/0.0.0.2/OCaml32.exe)
 * Open the OCaml32 prompt
 * `cd` to the directory (for me that is `/cygdrive/c/Code/Unison`)
-* run `make make UISTYLE=text OSTYPE=cygwin`
+* run `make UISTYLE=text OSTYPE=cygwin`
 * You should now have an executable in `src/unison.exe`
