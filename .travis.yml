@@ -4,9 +4,8 @@ install:
  - mkdir opam64
  - cd opam64
  - wget  https://github.com/fdopen/opam-repository-mingw/releases/download/0.0.0.1/opam64.tar.xz
- - 7z x opam64.tar.xz
- - tar xf opam64.tar
+ - tar xf opam64.tar.xz
  - ls
- - install.sh
+ - opam64/install.sh
 script: 
   - make UISTYLE=text OSTYPE=cygwin
