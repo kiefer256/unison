@@ -1,7 +1,10 @@
 os: windows
 language: shell
 install:
- - wget  https://github.com/fdopen/opam-repository-mingw/releases/download/0.0.0.2/OCaml32.exe
- - ./OCaml32.exe /S
+ - mkdir opam64
+ - cd opam64
+ - wget  https://github.com/fdopen/opam-repository-mingw/releases/download/0.0.0.1/opam64.tar.xz
+ - 7z x opam64.tar.xz
+ - bash opam64/install.sh
 script: 
   - make UISTYLE=text OSTYPE=cygwin
